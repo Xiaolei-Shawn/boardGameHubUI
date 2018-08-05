@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Game } from '../game';
+import { Games } from '../mock-games';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { Game } from '../game';
 })
 export class GamesComponent implements OnInit {
 
-  game: Game = {id: 1, name: "Battleship"};
+  games = Games;
 
   constructor() { }
 
